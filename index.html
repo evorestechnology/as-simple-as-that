@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>As Simple As That — Coming Soon</title>
+    <title>AST — As Simple As That | Designer Paradise</title>
     <!-- Tailwind CSS v4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
         }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in {
-            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
     <script>
@@ -32,13 +32,15 @@
 
     <!-- Header / Navigation -->
     <header class="w-full max-w-7xl mx-auto px-6 py-6 md:py-8 flex justify-between items-center opacity-0 animate-fade-in">
-        <!-- Single Transparent Logo -->
+        <!-- Logo Element with standard Premium White Background Container -->
         <div class="flex items-center">
-            <img 
-                src="asat_logo.png" 
-                alt="As Simple As That Logo" 
-                class="h-8 md:h-10 w-auto object-contain mix-blend-multiply dark:mix-blend-normal"
-            >
+            <div class="h-12 w-12 md:h-14 md:w-14 rounded-full bg-white flex items-center justify-center shadow-md border border-zinc-200/60 dark:border-zinc-800/40 p-2.5 transition-transform duration-300 hover:scale-105">
+                <img 
+                    src="asat_logo.png" 
+                    alt="AST Logo" 
+                    class="h-full w-full object-contain"
+                >
+            </div>
         </div>
 
         <!-- Interactive Theme Toggle Button -->
@@ -61,35 +63,60 @@
     <!-- Main Section -->
     <main class="w-full max-w-7xl mx-auto px-6 py-4 md:py-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 flex-grow">
         
-        <!-- Text Block -->
-        <div class="space-y-6 lg:max-w-xl opacity-0 animate-fade-in" style="animation-delay: 0.15s;">
+        <!-- Left Side: Luxury Brand Copy -->
+        <div class="space-y-8 lg:max-w-xl opacity-0 animate-fade-in" style="animation-delay: 0.15s;">
             <div class="space-y-4">
-                <!-- Enlarged Coming Soon Title -->
-                <h2 class="text-xl sm:text-2xl font-bold tracking-[0.3em] text-zinc-400 dark:text-zinc-500 uppercase">
-                    Coming Soon
+                <!-- Large Bold Coming Soon Statement -->
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-[0.35em] text-zinc-400 dark:text-zinc-500 uppercase">
+                    COMING SOON
                 </h2>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight leading-[1.1] text-zinc-900 dark:text-zinc-100">
-                    Less noise.<br>More of what <span class="italic font-light text-zinc-500 dark:text-zinc-400">matters</span>.
-                </h1>
+                <div class="space-y-2">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-light tracking-tight leading-[1.1] text-zinc-900 dark:text-zinc-100 uppercase">
+                        Designer Paradise
+                    </h1>
+                    <p class="text-lg md:text-xl font-normal tracking-wide text-zinc-500 dark:text-zinc-400 italic">
+                        A New Chapter in the World of Fashion Design.
+                    </p>
+                </div>
             </div>
-            <p class="text-zinc-500 dark:text-zinc-400 text-base md:text-lg font-light leading-relaxed max-w-md">
-                We are building a highly curated online shopping destination stripped entirely of complexity. Essentials, refined.
+
+            <hr class="border-zinc-200 dark:border-zinc-900 max-w-xs" />
+
+            <!-- Brand Pillars / Value Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+                <div class="space-y-1">
+                    <p class="text-xs uppercase tracking-widest font-semibold text-zinc-400 dark:text-zinc-500">Pillar 01</p>
+                    <p class="text-sm font-medium tracking-wide uppercase text-zinc-800 dark:text-zinc-200">Premium Quality</p>
+                </div>
+                <div class="space-y-1 sm:border-x sm:border-zinc-200 sm:dark:border-zinc-900 sm:px-4">
+                    <p class="text-xs uppercase tracking-widest font-semibold text-zinc-400 dark:text-zinc-500">Pillar 02</p>
+                    <p class="text-sm font-medium tracking-wide uppercase text-zinc-800 dark:text-zinc-200">Designers Choice</p>
+                </div>
+                <div class="space-y-1 sm:pl-4">
+                    <p class="text-xs uppercase tracking-widest font-semibold text-zinc-400 dark:text-zinc-500">Pillar 03</p>
+                    <p class="text-sm font-medium tracking-wide uppercase text-zinc-800 dark:text-zinc-200">Luxury Experience</p>
+                </div>
+            </div>
+
+            <!-- Launch Tagline -->
+            <p class="text-xs font-semibold tracking-[0.2em] text-zinc-400 dark:text-zinc-600 uppercase pt-4">
+                Launching Soon — Stay Tuned
             </p>
         </div>
 
-        <!-- Poster Showcase (Responsive sizing for mobile up to large desktop screens) -->
+        <!-- Right Side: Responsive Poster Showcase -->
         <div class="w-full lg:w-auto flex justify-center lg:justify-end opacity-0 animate-fade-in" style="animation-delay: 0.3s;">
-            <div class="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] aspect-[3/4] bg-zinc-100 dark:bg-zinc-900 rounded-2xl overflow-hidden shadow-[0_24px_60px_-15px_rgba(0,0,0,0.1)] dark:shadow-[0_24px_60px_-15px_rgba(0,0,0,0.5)] border border-zinc-200/80 dark:border-zinc-800/80 transform hover:scale-[1.01] transition-transform duration-500 ease-out">
-                <!-- Light Mode Poster -->
+            <div class="relative w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] aspect-[3/4] bg-zinc-100 dark:bg-zinc-900 rounded-2xl overflow-hidden shadow-[0_24px_60px_-15px_rgba(0,0,0,0.08)] dark:shadow-[0_24px_60px_-15px_rgba(0,0,0,0.6)] border border-zinc-200/80 dark:border-zinc-800/80 transform hover:scale-[1.01] transition-transform duration-500 ease-out">
+                <!-- Light Mode Poster image -->
                 <img 
                     src="poster_light.png" 
-                    alt="Coming Soon Collection Poster" 
+                    alt="AST Designer Paradise Light Poster" 
                     class="w-full h-full object-cover dark:hidden"
                 >
-                <!-- Dark Mode Poster -->
+                <!-- Dark Mode Poster image -->
                 <img 
                     src="poster_dark.png" 
-                    alt="Coming Soon Collection Poster" 
+                    alt="AST Designer Paradise Dark Poster" 
                     class="w-full h-full object-cover hidden dark:block"
                 >
             </div>
@@ -97,15 +124,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full max-w-7xl mx-auto px-6 py-6 md:py-8 flex flex-col sm:flex-row justify-between items-center text-xs tracking-wide text-zinc-400 dark:text-zinc-600 space-y-4 sm:space-y-0 opacity-0 animate-fade-in" style="animation-delay: 0.45s;">
+    <footer class="w-full max-w-7xl mx-auto px-6 py-6 md:py-8 flex flex-col sm:flex-row justify-between items-center text-xs tracking-widest text-zinc-400 dark:text-zinc-600 space-y-4 sm:space-y-0 opacity-0 animate-fade-in" style="animation-delay: 0.45s;">
         <p>&copy; 2026 assimpleasthat.shop</p>
-        <div class="flex space-x-8">
-            <a href="#" class="hover:text-zinc-800 dark:hover:text-zinc-300 transition-colors">Instagram</a>
-            <a href="#" class="hover:text-zinc-800 dark:hover:text-zinc-300 transition-colors">Pinterest</a>
+        <div class="flex items-center space-x-6">
+            <span class="text-[10px] uppercase font-bold text-zinc-300 dark:text-zinc-800 tracking-[0.2em]">Follow Us For Updates</span>
+            <a href="#" class="hover:text-zinc-800 dark:hover:text-zinc-300 transition-colors uppercase">Instagram</a>
+            <a href="#" class="hover:text-zinc-800 dark:hover:text-zinc-300 transition-colors uppercase">Pinterest</a>
         </div>
     </footer>
 
-    <!-- Theme Toggle Switch Logic -->
+    <!-- Theme Toggle Logic -->
     <script>
         const toggleBtn = document.getElementById('theme-toggle');
         
