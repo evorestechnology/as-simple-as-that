@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>As Simple As That — Coming Soon</title>
     <!-- Tailwind CSS v4 -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -32,19 +32,12 @@
 
     <!-- Header / Navigation -->
     <header class="w-full max-w-7xl mx-auto px-6 py-6 md:py-8 flex justify-between items-center opacity-0 animate-fade-in">
-        <!-- Brand Logos -->
+        <!-- Single Transparent Logo -->
         <div class="flex items-center">
-            <!-- Light Mode Logo (Visible if HTML doesn't have .dark) -->
             <img 
-                src="logo_light.jpeg" 
+                src="asat_logo.png" 
                 alt="As Simple As That Logo" 
-                class="h-8 md:h-10 w-auto object-contain dark:hidden"
-            >
-            <!-- Dark Mode Logo (Visible if HTML has .dark) -->
-            <img 
-                src="logo_dark.jpeg" 
-                alt="As Simple As That Logo" 
-                class="h-8 md:h-10 w-auto object-contain hidden dark:block"
+                class="h-8 md:h-10 w-auto object-contain mix-blend-multiply dark:mix-blend-normal"
             >
         </div>
 
@@ -70,10 +63,11 @@
         
         <!-- Text Block -->
         <div class="space-y-6 lg:max-w-xl opacity-0 animate-fade-in" style="animation-delay: 0.15s;">
-            <div class="space-y-3">
-                <span class="inline-block text-xs font-semibold tracking-[0.25em] text-zinc-400 dark:text-zinc-500 uppercase">
+            <div class="space-y-4">
+                <!-- Enlarged Coming Soon Title -->
+                <h2 class="text-xl sm:text-2xl font-bold tracking-[0.3em] text-zinc-400 dark:text-zinc-500 uppercase">
                     Coming Soon
-                </span>
+                </h2>
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight leading-[1.1] text-zinc-900 dark:text-zinc-100">
                     Less noise.<br>More of what <span class="italic font-light text-zinc-500 dark:text-zinc-400">matters</span>.
                 </h1>
@@ -116,7 +110,6 @@
         const toggleBtn = document.getElementById('theme-toggle');
         
         toggleBtn.addEventListener('click', () => {
-            // Check current explicit mode or system state
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
                 localStorage.theme = 'light';
